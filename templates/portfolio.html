@@ -4,16 +4,8 @@
     <title>Dein Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>{{ name }}</h1>
-        <h2>Deine "zukünftige" Rolle</h2>
-        <nav>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/contact">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% include "header.html" %}
+
     <main>
         <section>
             <h3>Etwas über mich</h3>
@@ -33,9 +25,7 @@
             <p>Ein kurzer Text, dass man Dich über das Kontaktformular erreichen kann</p>
         </section>
     </main>
-    <footer>
-        <h3>Credits</h3>
-        <p>Kurzer Dankestext und Verlinkung auf die Techstarter Website in einem neuen Tab <a href="https://techstarter.de/" target="_blank">hier</a></p>
-    </footer>
+
+    {% include "footer.html" %}
 </body>
 </html>
