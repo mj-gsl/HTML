@@ -5,8 +5,8 @@
 </head>
 <body>
     <header>
-        <h1>Mojtaba</h1>
-        <h2>Deine "Admin" Rolle</h2>
+        <h1>{{ name }}</h1>
+        <h2>Deine "zukünftige" Rolle</h2>
         <nav>
             <ul>
                 <li><a href="/home">Home</a></li>
@@ -16,27 +16,26 @@
     </header>
     <main>
         <section>
-            <h3>über Mich:</h3>
-            <p>Ich bin ...!!!</p>
+            <h3>Etwas über mich</h3>
+            <p>Schreibe einen kurzen Text über Dich</p>
         </section>
         <section>
             <h3>Skills</h3>
             <p>Mit diesen Tools und Sprachen arbeite ich jeden Tag</p>
             <ul>
-                <li>Linux/English</li>
-                <li>Docker/English</li>
-                <li>IOT/English</li>
-                <!-- Add more tools and languages as needed -->
+                {% for skill in skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
             </ul>
         </section>
         <section>
             <h3>Kontakt</h3>
-            <p>mojtaba.pourshiri@docc.techstarter.de</p>
+            <p>Ein kurzer Text, dass man Dich über das Kontaktformular erreichen kann</p>
         </section>
     </main>
     <footer>
         <h3>Credits</h3>
-        <p>Sparkasse <a href="https://techstarter.de/" target="_blank">hier</a></p>
+        <p>Kurzer Dankestext und Verlinkung auf die Techstarter Website in einem neuen Tab <a href="https://www.techstarterwebsite.com" target="_blank">hier</a></p>
     </footer>
 </body>
 </html>
