@@ -1,0 +1,13 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const kontaktLink = document.querySelector("li a[href='/contact']");
+      const email = document.getElementById("contact-email");
+  
+      kontaktLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default link behavior
+        email.style.fontWeight = "bold";
+        email.style.color = "red";
+      });
+    });
+  </script>
+  
