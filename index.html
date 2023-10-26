@@ -11,6 +11,8 @@
             <ul>
                 <li><a href="/home">Home</a></li>
                 <li><a href="/contact">Kontakt</a></li>
+                <li><a href="#" onclick="makeEmailBoldAndRed()">Contact</a></li>
+                <p id="contactEmail">mojtaba.pourshiri@docc.techstarter.de</p>
             </ul>
         </nav>
     </header>
@@ -37,5 +39,12 @@
         <h3>Credits</h3>
         <p>Sparkasse <a href="https://techstarter.de/" target="_blank">hier</a></p>
     </footer>
+    <script>
+        function makeEmailBoldAndRed() {
+            var emailElement = document.getElementById("contactEmail");
+            emailElement.style.fontWeight = "bold";
+            emailElement.style.color = "red";
+        }
+    </script>    
 </body>
 </html>
